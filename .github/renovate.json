@@ -1,0 +1,26 @@
+{
+  "semanticCommits": true,
+  "prHourlyLimit": 5,
+  "reviewersFromCodeOwners": true,
+  "labels": [
+    "dependencies"
+  ],
+  "extends": [
+    "config:base",
+    ":pinAllExceptPeerDependencies",
+    "group:allNonMajor"
+  ],
+  "postUpdateOptions": ["gomodTidy"],
+  "major": {
+    "labels": [
+      "dependencies",
+      "major"
+    ]
+  },
+  "minor": {
+    "labels": [
+      "dependencies",
+      "minor"
+    ]
+  }
+}

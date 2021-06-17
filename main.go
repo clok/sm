@@ -32,7 +32,7 @@ func main() {
 		Authors: []*cli.Author{
 			{
 				Name:  "Derek Smith",
-				Email: "dsmith@goodwaygroup.com",
+				Email: "derek@clokwork.net",
 			},
 			{
 				Name: info.AppRepoOwner,
