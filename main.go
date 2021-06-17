@@ -31,37 +31,14 @@ func main() {
 		Compiled: time.Now(),
 		Authors: []*cli.Author{
 			{
-				Name:  "Derek Smith",
-				Email: "derek@clokwork.net",
-			},
-			{
 				Name: info.AppRepoOwner,
 			},
 		},
 		Copyright:            "(c) 2021 Derek Smith",
 		HelpName:             info.AppName,
-		Usage:                "interact with config map and secret manager variables",
+		Usage:                "AWS Secrets Manager CLI Tool",
 		EnableBashCompletion: true,
 		Commands: []*cli.Command{
-			{
-				// list-secrets
-				Name:   "list",
-				Usage:  "display table of all secrets with meta data",
-				Action: cmd.ListSecrets,
-			},
-			{
-				// describe-secret
-				Name:  "describe",
-				Usage: "print description of secret to `STDOUT`",
-				Flags: []cli.Flag{
-					&cli.StringFlag{
-						Name:    "secret-id",
-						Aliases: []string{"s"},
-						Usage:   "Specific Secret to describe, will bypass select/search",
-					},
-				},
-				Action: cmd.DescribeSecret,
-			},
 			{
 				// get-secret-value
 				Name:    "get",
@@ -203,11 +180,31 @@ with AWSPREVIOUS.
 				},
 				Action: cmd.DeleteSecret,
 			},
+			{
+				// list-secrets
+				Name:   "list",
+				Usage:  "display table of all secrets with meta data",
+				Action: cmd.ListSecrets,
+			},
+			{
+				// describe-secret
+				Name:  "describe",
+				Usage: "print description of secret to `STDOUT`",
+				Flags: []cli.Flag{
+					&cli.StringFlag{
+						Name:    "secret-id",
+						Aliases: []string{"s"},
+						Usage:   "Specific Secret to describe, will bypass select/search",
+					},
+				},
+				Action: cmd.DescribeSecret,
+			},
 			im,
 			{
 				Name:    "version",
 				Aliases: []string{"v"},
 				Usage:   "Print version info",
+				Hidden:  true,
 				Action: func(c *cli.Context) error {
 					fmt.Printf("%s %s (%s/%s)\n", info.AppName, version, runtime.GOOS, runtime.GOARCH)
 					return nil
