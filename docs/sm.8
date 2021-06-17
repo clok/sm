@@ -1,0 +1,146 @@
+.nh
+.TH sm 8
+
+.SH NAME
+.PP
+sm \- AWS Secrets Manager CLI Tool
+
+
+.SH SYNOPSIS
+.PP
+sm
+
+
+.SH COMMAND TREE
+.RS
+.IP \(bu 2
+get, view
+\[la]#get-view\[ra]
+.IP \(bu 2
+edit, e
+\[la]#edit-e\[ra]
+.IP \(bu 2
+create, c
+\[la]#create-c\[ra]
+.IP \(bu 2
+put
+\[la]#put\[ra]
+.IP \(bu 2
+delete, del
+\[la]#delete-del\[ra]
+.IP \(bu 2
+list
+\[la]#list\[ra]
+.IP \(bu 2
+describe
+\[la]#describe\[ra]
+
+.RE
+
+.PP
+\fBUsage\fP:
+
+.PP
+.RS
+
+.nf
+sm [GLOBAL OPTIONS] command [COMMAND OPTIONS] [ARGUMENTS...]
+
+.fi
+.RE
+
+
+.SH COMMANDS
+.SH get, view
+.PP
+select from list or pass in specific secret
+
+.PP
+\fB\-\-binary, \-b\fP: get the SecretBinary value
+
+.PP
+\fB\-\-secret\-id, \-s\fP="": Specific Secret to view, will bypass select/search
+
+.SH edit, e
+.PP
+interactive edit of a secret String Value
+
+.PP
+\fB\-\-binary, \-b\fP: get the SecretBinary value
+
+.PP
+\fB\-\-secret\-id, \-s\fP="": Specific Secret to edit, will bypass select/search
+
+.SH create, c
+.PP
+create new secret in Secrets Manager
+
+.PP
+\fB\-\-binary, \-b\fP: get the SecretBinary value
+
+.PP
+\fB\-\-description, \-d\fP="": Additional description text.
+
+.PP
+\fB\-\-interactive, \-i\fP: Open interactive editor to create secret value. If no 'value' is provided, an editor will be opened by default.
+
+.PP
+\fB\-\-secret\-id, \-s\fP="": Secret name
+
+.PP
+\fB\-\-tags, \-t\fP="": key=value tags (CSV list)
+
+.PP
+\fB\-\-value, \-v\fP="": Secret Value. Will store as a string, unless binary flag is set.
+
+.SH put
+.PP
+non\-interactive update to a specific secret
+
+.PP
+.RS
+
+.nf
+Stores a new encrypted secret value in the specified secret. To do this, the 
+operation creates a new version and attaches it to the secret. The version 
+can contain a new SecretString value or a new SecretBinary value.
+
+This will put the value to AWSCURRENT and retain one previous version 
+with AWSPREVIOUS.
+
+.fi
+.RE
+
+.PP
+\fB\-\-binary, \-b\fP: get the SecretBinary value
+
+.PP
+\fB\-\-interactive, \-i\fP: Override and open interactive editor to verify and modify the new secret value.
+
+.PP
+\fB\-\-secret\-id, \-s\fP="": Secret name
+
+.PP
+\fB\-\-value, \-v\fP="": Secret Value. Will store as a string, unless binary flag is set.
+
+.SH delete, del
+.PP
+delete a specific secret
+
+.PP
+\fB\-\-force, \-f\fP: Bypass recovery window (30 days) and immediately delete Secret.
+
+.PP
+\fB\-\-secret\-id, \-s\fP="": Specific Secret to delete
+
+.SH list
+.PP
+display table of all secrets with meta data
+
+.SH describe
+.PP
+print description of secret to \fB\fCSTDOUT\fR
+
+.PP
+\fB\-\-secret\-id, \-s\fP="": Specific Secret to describe, will bypass select/search
+
