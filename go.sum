@@ -8,8 +8,8 @@ github.com/TylerBrock/colorjson v0.0.0-20200706003622-8a50f05110d2/go.mod h1:VSw
 github.com/a8m/djson v0.0.0-20170509170705-c02c5aef757f h1:su5fhWd5UCmmRQEFPQPalJ304Qtcgk9ZDDnKnvpsraU=
 github.com/a8m/djson v0.0.0-20170509170705-c02c5aef757f/go.mod h1:w3s8fnedJo6LJQ7dUUf1OcetqgS1hGpIDjY5bBowg1Y=
 github.com/aws/aws-sdk-go v1.38.63/go.mod h1:hcU610XS61/+aQV88ixoOzUoG7v3b31pl2zKMmprdro=
-github.com/aws/aws-sdk-go v1.41.5 h1:Y41voXM6P/Kq3kxZIk5cV5uOuy8HXfiKTmtXlMCIuIM=
-github.com/aws/aws-sdk-go v1.41.5/go.mod h1:585smgzpB/KqRA+K3y/NL/oYRqQvpNJYvLm+LY1U59Q=
+github.com/aws/aws-sdk-go v1.42.23 h1:V0V5hqMEyVelgpu1e4gMPVCJ+KhmscdNxP/NWP1iCOA=
+github.com/aws/aws-sdk-go v1.42.23/go.mod h1:gyRszuZ/icHmHAVE4gc/r+cfCmhA1AD+vqfWbgI+eHs=
 github.com/clok/awssession v1.1.2 h1:ZSAsQu3dAUSmySRJTpvCogwY01ry+43qmEPoM3FL/rU=
 github.com/clok/awssession v1.1.2/go.mod h1:5g1RJIhuBYhNLoX6OLeJH53GQWLChj8Piv2GDDWLa3g=
 github.com/clok/cdocs v1.2.0 h1:sFhbBmTgV1rC8TjRSzBD7RIXP4fSnw/gTBPd5YuRBJM=
@@ -82,7 +82,7 @@ golang.org/x/crypto v0.0.0-20190530122614-20be4c3c3ed5/go.mod h1:yigFU9vqHzYiE8U
 golang.org/x/crypto v0.0.0-20200622213623-75b288015ac9/go.mod h1:LzIPMQfyMNhhGPhUkYOs5KpL4U8rLKemX1yGLhDgUto=
 golang.org/x/net v0.0.0-20190404232315-eb5bcb51f2a3/go.mod h1:t9HGtf8HONx5eT2rtn7q6eTqICYqUVnKs3thJo3Qplg=
 golang.org/x/net v0.0.0-20201110031124-69a78807bb2b/go.mod h1:sp8m0HH+o8qH0wwXwYZr8TS3Oi6o0r6Gce1SSxlDquU=
-golang.org/x/net v0.0.0-20210614182718-04defd469f4e/go.mod h1:9nx3DQGgdP8bBQD5qxJ1jj9UTztislL4KSBs9R2vV5Y=
+golang.org/x/net v0.0.0-20211209124913-491a49abca63/go.mod h1:9nx3DQGgdP8bBQD5qxJ1jj9UTztislL4KSBs9R2vV5Y=
 golang.org/x/sys v0.0.0-20180816055513-1c9583448a9c/go.mod h1:STP8DvDyc/dI5b8T5hshtkjS+E42TnysNCUPdjciGhY=
 golang.org/x/sys v0.0.0-20190215142949-d0b11bdaac8a/go.mod h1:STP8DvDyc/dI5b8T5hshtkjS+E42TnysNCUPdjciGhY=
 golang.org/x/sys v0.0.0-20190222072716-a9d3bda3a223/go.mod h1:STP8DvDyc/dI5b8T5hshtkjS+E42TnysNCUPdjciGhY=
