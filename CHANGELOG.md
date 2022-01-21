@@ -2,6 +2,9 @@
 ## [Unreleased]
 
 
+<a name="v0.1.1"></a>
+## [v0.1.1] - 0001-01-01
+
 <a name="v0.1.0-8-ge10cff7"></a>
 ## [v0.1.0-8-ge10cff7] - 2022-01-21
 ### Bug Fixes
@@ -9,6 +12,7 @@
   
   ### Chore
 - update readme
+  - **release:** v0.1.0-8-ge10cff7
   
   ### Pull Requests
 - fix(deps): update module github.com/aws/aws-sdk-go to v1.42.39 ([#7](https://github.com/clok/sm/issues/7))
@@ -34,5 +38,6 @@
 - **sm:** add initial actions for AWS secrets manager
   
   
-[Unreleased]: https://github.com/clok/sm/compare/v0.1.0-8-ge10cff7...HEAD
+[Unreleased]: https://github.com/clok/sm/compare/v0.1.1...HEAD
+[v0.1.1]: https://github.com/clok/sm/compare/v0.1.0-8-ge10cff7...v0.1.1
 [v0.1.0-8-ge10cff7]: https://github.com/clok/sm/compare/v0.1.0...v0.1.0-8-ge10cff7
