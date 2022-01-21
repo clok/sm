@@ -75,8 +75,8 @@ We maintain the following tags:
 - `x.y.z` (versions): Images that are build from the tagged versions within Github.
 
 ```bash
-docker pull ghcr.io/goodwaygroup/sm
-docker run -v "$PWD":/workdir ghcr.io/goodwaygroup/sm --version
+docker pull ghcr.io/clok/sm
+docker run -v "$PWD":/workdir ghcr.io/clok/sm --version
 ```
 
 ### man page
