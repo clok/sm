@@ -1,4 +1,4 @@
-FROM alpine:3.15.0
+FROM alpine:3.15.4
 
 COPY sm /usr/local/bin/sm
 RUN chmod +x /usr/local/bin/sm
