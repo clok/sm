@@ -2,9 +2,27 @@
 ## [Unreleased]
 
 
+<a name="v0.1.2"></a>
+## [v0.1.2] - 2022-05-23
+### Chore
+- **docs:** updating docs for version v0.1.2
+  
+  ### Pull Requests
+- chore(deps): update goreleaser/goreleaser-action action to v3 ([#14](https://github.com/clok/sm/issues/14))
+  - chore(deps): update docker/login-action action to v2 ([#13](https://github.com/clok/sm/issues/13))
+  - fix(deps): update all non-major dependencies ([#12](https://github.com/clok/sm/issues/12))
+  - chore(deps): update all non-major dependencies ([#8](https://github.com/clok/sm/issues/8))
+  - chore(deps): update actions/setup-go action to v3 ([#10](https://github.com/clok/sm/issues/10))
+  - chore(deps): update actions/checkout action to v3 ([#11](https://github.com/clok/sm/issues/11))
+  - chore(deps): update golangci/golangci-lint-action action to v3 ([#9](https://github.com/clok/sm/issues/9))
+  
+  
 <a name="v0.1.1"></a>
-## [v0.1.1] - 0001-01-01
-
+## [v0.1.1] - 2022-01-21
+### Chore
+- **release:** v0.1.1
+  
+  
 <a name="v0.1.0-8-ge10cff7"></a>
 ## [v0.1.0-8-ge10cff7] - 2022-01-21
 ### Bug Fixes
@@ -38,6 +56,7 @@
 - **sm:** add initial actions for AWS secrets manager
   
   
-[Unreleased]: https://github.com/clok/sm/compare/v0.1.1...HEAD
+[Unreleased]: https://github.com/clok/sm/compare/v0.1.2...HEAD
+[v0.1.2]: https://github.com/clok/sm/compare/v0.1.1...v0.1.2
 [v0.1.1]: https://github.com/clok/sm/compare/v0.1.0-8-ge10cff7...v0.1.1
 [v0.1.0-8-ge10cff7]: https://github.com/clok/sm/compare/v0.1.0...v0.1.0-8-ge10cff7
