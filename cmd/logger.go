@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	a "github.com/logrusorgru/aurora/v3"
+	a "github.com/logrusorgru/aurora/v4"
 )
 
 func PrintWarn(s string) {

@@ -6,7 +6,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/logrusorgru/aurora/v3"
+	"github.com/logrusorgru/aurora/v4"
 )
 
 func Test_PrintWarn(t *testing.T) {
