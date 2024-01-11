@@ -19,3 +19,22 @@ linters:
     - golint
     - misspell
     - unconvert
+
+linters-settings:
+  depguard:
+    rules:
+      prevent_unmaintained_packages:
+        list-mode: lax # allow unless explicitely denied
+        files:
+          - $all
+          - "!$test"
+        allow:
+          - $gostd
+          - 'github.com/clok'
+          - 'github.com/urfave/cli/v2'
+          - 'github.com/aws/aws-sdk-go'
+          - 'github.com/jedib0t/go-pretty'
+          - 'github.com/a8m/djson'
+          - 'github.com/TylerBrock/colorjson'
+          - 'github.com/AlecAivazis/survey/v2'
+          - 'github.com/logrusorgru/aurora/v3'
