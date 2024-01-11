@@ -10,7 +10,7 @@ require (
 	github.com/clok/awssession v1.1.2
 	github.com/clok/cdocs v1.2.0
 	github.com/jedib0t/go-pretty/v6 v6.5.2
-	github.com/logrusorgru/aurora/v3 v3.0.0
+	github.com/logrusorgru/aurora/v4 v4.0.0
 	github.com/urfave/cli/v2 v2.27.1
 )
 

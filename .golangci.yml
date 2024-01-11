@@ -37,4 +37,4 @@ linters-settings:
           - 'github.com/a8m/djson'
           - 'github.com/TylerBrock/colorjson'
           - 'github.com/AlecAivazis/survey/v2'
-          - 'github.com/logrusorgru/aurora/v3'
+          - 'github.com/logrusorgru/aurora/v4'
