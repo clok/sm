@@ -1,6 +1,6 @@
 module github.com/clok/sm
 
-go 1.18
+go 1.22
 
 require (
 	github.com/AlecAivazis/survey/v2 v2.3.7
@@ -11,7 +11,8 @@ require (
 	github.com/clok/cdocs v1.2.0
 	github.com/jedib0t/go-pretty/v6 v6.5.2
 	github.com/logrusorgru/aurora/v4 v4.0.0
-	github.com/urfave/cli/v2 v2.27.1
+	github.com/urfave/cli/v2 v2.3.0
+	github.com/urfave/cli/v3 v3.11.0
 )
 
 require (
